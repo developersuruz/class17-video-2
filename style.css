@@ -1,0 +1,359 @@
+
+/* Default CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    width: 1240px;
+    margin: auto;
+}
+
+.clear::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+a{
+    text-decoration: none;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+/* font family */
+body,h1,h2,h3,h4,h5,h6,a,p,span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Header CSS */
+.header{
+    background-color: #fff;
+    color: #000;
+} 
+
+.header-left{
+    float: left;
+    width: 30%;
+}
+
+.Logo {
+	float: left;
+}
+
+.header-left img {
+    width: 60px;
+    height: auto;
+    border-radius: 10px;
+    padding: 8px 0;
+}
+
+.appamp{
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.appamp span{
+	font-size: 30px;
+}
+
+.header-right{
+    float: left; 
+    width: 60%;
+}
+
+.Primary-menu{}
+
+.Primary-menu ul{
+    text-align: center; 
+    font-size: 20px;
+}
+
+.Primary-menu ul li {
+    display: inline-block;
+    margin-left: -4px;
+}
+
+.Primary-menu ul li a{
+    display: block;
+    color: #000;
+    font-size: 18px;
+    padding: 0 20px;
+    text-decoration: none;
+    line-height: 75px;
+    border-right: 1px solid #fff;
+    transition: .5s;
+}
+
+.Primary-menu ul li a:hover{
+    background-color:#2ecc71;
+}
+
+/*DropDown Menu*/
+.Primary-menu ul li{
+    position: relative;
+}
+
+.Primary-menu ul li ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100px;
+    background: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+    transform: scaley(0);
+}
+
+.Primary-menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaley(1);
+}
+
+.default-button{
+
+}
+
+.default-button a{
+
+}
+
+.default-button a button{
+    display: inline-block;
+    padding: 10px 30px;
+    border: 2px solid #6278df;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 21px;
+}
+
+.default-button a button:hover{
+    background-color: #6278df;
+    color: #fff;
+}
+
+/*Banner Section*/
+.banner {
+    background: url(./img/mbr-4.jpg) no-repeat center fixed;
+    background-size: cover;      
+    color: #fafafa;
+    height: 500px;
+}
+
+
+.banner .banner-caption{
+    text-align: center;
+    padding: 150px;
+    color: white;
+    padding-top: 100px;
+}
+
+.banner .banner-caption h3{
+    font-size: 30px;
+}
+
+.banner .banner-caption h1{
+    font-size: 60px;
+}
+
+
+.button-div button:hover::before{    
+    width: 100%;
+    
+}
+
+.button-div button:hover{  
+    color: #fff;
+    background-color: #6278df;   
+}
+
+.button-div button{
+    padding: 15px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    font-size: 20px;
+    color: #c5bfbf;
+    margin-top: 20px;
+    z-index: 1; 
+    position: relative;
+    margin-right: 10px;
+    transition: .5s;
+}
+
+
+.fa.fa-android {
+	font-size: 25px;
+	margin-right: 5px;
+}
+
+.spic{
+    border-radius: 50%;
+    width: 30px;
+    height: auto;
+}
+
+.default-btn {
+    display: inline-block;
+    background: #b9e1c9;
+    color: black;
+    padding: 3px 10px;
+    padding-bottom: 0;
+    font-size: 18px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+/*Banner 2*/
+.banner-section{
+    background-color: #fff;
+    padding: 50px 0;
+
+}
+
+.mid-content{}
+.video-left{
+    float: left;
+    width: 48%;
+}
+
+.video-content-right{
+    float: right;
+    width: 48%;
+}
+
+.video-content-right h3 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+    color: red;
+    border-bottom: 1px solid #000;
+}
+
+.video-content-right p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #000;
+    text-align: justify;
+}
+
+/*Service section*/
+.service-section{}
+.section-title{}
+.section-title h3 img{
+    font-size: 50px;
+    margin: 15px;
+    font-weight: 500;
+    border-radius: 50%;
+    height: 85px;
+}
+
+.section-title h3 {
+    font-size: 50px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.section-title p {
+    font-size: 25px;
+    margin-bottom: 40px;
+    font-weight: 200;
+    border-bottom: 1px solid #000;
+}
+
+/*Services Items*/
+.services-items{
+    margin-top: 60px;
+} 
+
+.service-box {
+    float: left;
+    width: 31.3%;
+    box-shadow: 7px 7px 25px 0 rgb(0 0 0 / 50%);
+    margin-right: 2%;
+    margin-bottom: 35px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.s-icon{
+    float: left;
+    width: 50px;
+    min-height: 100px;
+    font-size: 45px;
+    color: rebeccapurple;
+    margin-right: 10px;
+}
+
+.s-icon span{}
+
+.s-icon span img {
+    border-radius: 10px;
+    height: 64px;
+}
+
+.s-content{
+    margin-top: 8px;
+    text-align: justify;
+}
+
+.s-content h3{
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 21px;
+    text-align: center;
+    color: #2ecc71;
+}
+
+.s-content p{
+    color: #000;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+
+/* Footer Section */
+.footer-section{
+    background-color: #fff;
+    height: 70px;
+}
+
+.footer-section .footer{
+    text-align: center; 
+}
+
+.footer-section .footer p{
+    color:#000;
+    line-height: 70px;
+    font-size: 18px;
+}
